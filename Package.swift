@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "RxObservableCache", targets: ["RxObservableCache"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMinor(from: "5.1.0"))
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMinor(from: "6.2.0"))
     ],
     targets: [
         .target(
