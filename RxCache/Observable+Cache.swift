@@ -12,7 +12,7 @@ public extension Observable {
     
     func associate(with association: CacheAssociation<Element>) -> Observable<Element> {
         
-        let result = Observable<Void>.just(()).flatMap { _ -> Observable<Element> in
+        let result = RxSwift.Observable<Void>.just(()).flatMap { _ -> Observable<Element> in
             
             let cache = CacheContainer.instanceLazyInit
             let id = association.id
